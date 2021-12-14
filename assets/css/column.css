@@ -1,0 +1,137 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: var(--first-font);
+}
+
+:root {
+  --first-font: "Lexend Deca", sans-serif;
+  --second-font: "Big Shoulders Display", cursive;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.text {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 0.67rem;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  color: hsl(0, 0%, 95%);
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0.3rem;
+  width: 14rem;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 1.2rem 2.4rem;
+}
+
+.sedan-card {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suv-card {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.lux-card {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.sedan-card .buttons {
+  color: hsl(31, 77%, 52%);
+}
+
+.suv-card .buttons {
+  color: hsl(184, 100%, 22%);
+}
+
+.lux-card .buttons {
+  color: hsl(179, 100%, 13%);
+}
+
+.buttons {
+  background-color: hsl(0, 0%, 95%);
+  transition: 0.4s;
+  text-align: center;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  padding: 0.67rem;
+  width: 6rem;
+  margin-bottom: 1rem;
+  font-size: 0.67rem;
+}
+
+.buttons:hover {
+  background-color: transparent;
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 0.12rem solid hsla(0, 0%, 100%, 0.75);
+}
+
+.logo {
+  height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    width: 45rem;
+  }
+
+  .body {
+    position: relative;
+    height: 100vh;
+  }
+
+  .bg-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
